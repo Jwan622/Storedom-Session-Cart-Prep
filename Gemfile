@@ -24,4 +24,6 @@ end
 
 group :development, :test do
   gem 'capybara'
+  gem 'launchy'
+  gem 'pry'
 end

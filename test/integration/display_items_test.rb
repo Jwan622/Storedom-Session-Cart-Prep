@@ -15,4 +15,10 @@ class DisplaysItemsTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test "empty cart doesn't have items" do
+    visit cart_items_path
+
+    assert page.has_content?("Go buy some shit.")
+  end
+
 end

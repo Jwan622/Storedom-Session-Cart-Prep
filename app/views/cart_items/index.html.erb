@@ -1,0 +1,16 @@
+<% if !@cart_items.empty? %>
+  <% @cart_items.each do |item, quantity| %>
+    <div class="item-name">
+      <%= item.name %>
+    </div>
+    <div class="item-description">
+      <%= item.description %>
+    </div><div class="item-quantity">
+      <%= quantity %>
+    </div>
+  <% end %>
+<% else %>
+  <p>
+    Go buy some shit.
+  </p>
+<% end %>
